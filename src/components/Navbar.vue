@@ -7,6 +7,10 @@ import {
   Auth,
   User,
 } from "firebase/auth";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
 const activeClass = ref(
   "flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 text-900 surface-400 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple"
 );
@@ -35,8 +39,9 @@ onMounted(() => {
   });
 });
 
-const handleSignOut = () => {
-  signOut(auth);
+const handleSignOut = async () => {
+  await signOut(auth);
+  router.push("/login");
 };
 </script>
 <template>
