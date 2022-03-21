@@ -118,6 +118,15 @@ const handleSignOut = async () => {
             <span>Feed</span>
           </router-link>
         </li>
+        <li>
+          <router-link
+            :class="[$route.name === 'Topics' ? activeClass : inactiveClass]"
+            to="/topics"
+          >
+            <i class="pi pi-home mr-2"></i>
+            <span>Topics</span>
+          </router-link>
+        </li>
       </ul>
       <ul
         v-if="data.isLoggedIn"
