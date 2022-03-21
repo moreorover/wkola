@@ -62,7 +62,7 @@ const signUpWithGoogle = () => {
       <FormKit
         type="form"
         v-model="formData"
-        submit-label="Register"
+        submit-label="Log In"
         @submit="login"
       >
         <h1>Log In!</h1>
