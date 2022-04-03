@@ -37,9 +37,25 @@ const router = createRouter({
       },
     },
     {
+      path: "/topics/:topicId",
+      name: "Topic",
+      component: () => import("../views/ShowTopic.vue"),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
       path: "/topics",
       name: "Topics",
-      component: () => import("../views/Topics.vue"),
+      component: () => import("../views/ShowTopics.vue"),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: "/books/:bookId",
+      name: "Book",
+      component: () => import("../views/ShowBook.vue"),
       meta: {
         requiresAuth: true,
       },
