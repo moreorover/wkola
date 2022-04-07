@@ -61,7 +61,7 @@ const selectedTaskClass =
     </div>
 
     <div class="flex w-full flex-col">
-      <div class="flex justify-around pb-4">
+      <div class="flex flex-wrap justify-around pb-4">
         <span
           v-for="task in sortTasks(lesson.tasks)"
           @click="select(lesson.sequence, task.sequence)"
