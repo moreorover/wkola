@@ -51,6 +51,7 @@ const selectedTaskClass =
   </p>
   <div
     v-for="lesson in sortLessons(book.lessons)"
+    v-show="lesson.tasks.length > 0"
     class="container mx-auto my-4 flex flex-col items-center border border-gray-400 py-4 md:flex-row"
   >
     <div class="flex flex-col text-center md:w-5/12 md:text-7xl">
