@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
   getAuth,
-  signInWithEmailAndPassword,
   GoogleAuthProvider,
+  signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
 import { reactive, ref } from "vue";
@@ -49,15 +49,7 @@ const signUpWithGoogle = () => {
 };
 </script>
 <template>
-  <div
-    class="
-      flex
-      justify-content-center
-      flex-wrap
-      card-container
-      yellow-container
-    "
-  >
+  <div class="card-container yellow-container flex flex-wrap justify-center">
     <div>
       <FormKit
         type="form"
@@ -65,9 +57,6 @@ const signUpWithGoogle = () => {
         submit-label="Log In"
         @submit="login"
       >
-        <h1>Log In!</h1>
-
-        <hr />
         <FormKit
           type="text"
           name="email"

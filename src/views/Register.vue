@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
-  getAuth,
   createUserWithEmailAndPassword,
+  getAuth,
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
@@ -34,15 +34,7 @@ const signUpWithGoogle = () => {
 };
 </script>
 <template>
-  <div
-    class="
-      flex
-      justify-content-center
-      flex-wrap
-      card-container
-      yellow-container
-    "
-  >
+  <div class="card-container yellow-container flex flex-wrap justify-center">
     <div>
       <FormKit
         type="form"
@@ -50,9 +42,6 @@ const signUpWithGoogle = () => {
         submit-label="Register"
         @submit="register"
       >
-        <h1>Register!</h1>
-
-        <hr />
         <FormKit
           type="text"
           name="email"
