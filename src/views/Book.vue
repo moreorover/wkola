@@ -41,9 +41,9 @@ const select = (lesson: number, task: number) => {
 };
 
 const unSelectedTaskClass =
-  "bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300";
+  "bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 my-1 rounded dark:bg-gray-700 dark:text-gray-300";
 const selectedTaskClass =
-  "bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900";
+  "bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 my-1 rounded dark:bg-indigo-200 dark:text-indigo-900";
 </script>
 <template>
   <p class="text-6xl dark:text-white">
