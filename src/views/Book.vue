@@ -80,7 +80,7 @@ const selectedTaskClass =
         "
         class="mx-auto rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800"
       >
-        <img class="rounded" :src="task.img" />
+        <img v-lazy="{ src: task.img }" />
       </div>
     </div>
   </div>
